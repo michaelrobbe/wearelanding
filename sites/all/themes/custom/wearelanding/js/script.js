@@ -13,7 +13,22 @@
 (function ($, Drupal, window, document, undefined) {
 
 
-// Place your code here.
-
+	$(document).ready(function() {
+		$('#header input').each(function() {
+			var default_value = this.value;
+			$(this).focus(function() {
+				if(this.value == default_value) {
+					this.value = '';
+					$(this).addClass('user_input');
+				}
+			});
+			$(this).blur(function() {
+				if(this.value == '') {
+					this.value = default_value;
+					$(this).removeClass('user_input');
+				}
+			});
+		});
+	});
 
 })(jQuery, Drupal, this, this.document);

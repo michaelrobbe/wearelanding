@@ -29,5 +29,6 @@
 <?php if ($content): ?>
   <footer id="footer" class="<?php print $classes; ?>">
     <?php print $content; ?>
+    <div id="copyright">&copy <?php echo date('Y') . ' ' . variable_get('site_name'); ?>, All Rights Reserved.</div>
   </footer><!-- region__footer -->
 <?php endif; ?>

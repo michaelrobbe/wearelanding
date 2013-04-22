@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
 
 html body header#header{
 	background-color: #1C1F26;
@@ -7,6 +8,64 @@ html body header#header{
 	padding-left: 0;
 	padding-right: 0;
 	position: relative;
+}
+
+#name-and-slogan {
+	margin-left: 60px;
+}
+
+#secondary-menu {
+	height: 56px;
+}
+
+#secondary-menu li {
+	padding: 0;
+}
+
+#secondary-menu li a {
+	color: #FFFFFF;
+	line-height: 56px;
+	padding: 0 30px 0 60px;
+	border-left: 1px solid #aaa;
+	display: inline-block;
+	background-position: 25px center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+
+#secondary-menu .menu-198 a {
+	background-image: url('/sites/all/themes/custom/wearelanding/images/howitworks-icon.png');
+}
+
+#secondary-menu .menu-200 a {
+	background-image: url('/sites/all/themes/custom/wearelanding/images/profile-icon.png');
+}
+
+#secondary-menu .menu-199 a {
+	background-image: url('/sites/all/themes/custom/wearelanding/images/lock-icon.png');
+}
+
+#secondary-menu li a:hover {
+	background-color: #15161B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Merriweather Sans";
+}
+
+#header h1 {
+	color: #FFFFFF;
+}
+
+#header h4 {
+	color: #FFFFFF;
+	font-weight: normal;	
+}
+
+#header p {
+	line-height: 2em;
+	font-size: 1em;
+	color: #FFFFFF;
 }
 
 #header #block-block-1 {
@@ -23,6 +82,37 @@ html body header#header{
 	right: 60px;
 }
 
+#header #block-block-2 input {
+	width: 250px;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 5px 0;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+#header #block-block-2 input:focus {
+	outline: none;
+	border-color: white;
+}
+
+#header #block-block-2 input[type="submit"] {
+	background-color: #FF4534;
+	border: none;
+	border-bottom: 4px solid #C43525;
+	width: 140px;
+}
+
+#header #block-block-2 p {
+	line-height: 1.2em;
+	font-size: 0.8em;
+}
+
+#header #block-block-2 p a {
+	color: white;
+}
+
 #header #block-views-slideshow-block {
 	position: absolute;
 	top: 186px;
@@ -32,10 +122,13 @@ html body header#header{
 }
 
 #header #block-views-slideshow-block h2 {
-	margin-top: 2.5em;
-	margin-bottom: 0.5em;
+	margin-top: 42px;
+	margin-bottom: 0;
 	text-align: center;
 	line-height: 1em;
+	background-color: red;
+	padding: 15px;
+	color: white;
 }
 
 html body {
@@ -86,14 +179,110 @@ html #content {
 
 article {
 	width: 28%;
-	margin: 40px 1.5%;
+	margin: 40px 0% 0 4.5%;
 	display: inline-block;
 	position: relative;
 	padding-top: 180px;
+}
+
+article .node-title {
+	font-weight: normal;
+}
+
+article .node-title a {
+	color: #181818;
+	text-decoration: none;
+}
+
+article p {
+	color: #A6A6A6;
+	font-size: 0.8em;
+}
+
+article .node-readmore a {
+	display: inline-block;
+	padding: 8px 25px;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #959595;
+	border-radius: 5px;
+	border-bottom: 4px solid #787878;
+	font-size: 0.8em;
+}
+
+article .node-readmore a:hover {
+	text-decoration: underline;
 }
 
 .field-name-field-icon {
 	position: absolute;
 	top: 0px;
 	left: 90px;
+}
+
+footer#footer {
+	background-image: url('/sites/all/themes/custom/wearelanding/images/gray_plaid_bg.png');
+	color: white;
+	padding-left: 55px;
+	position: relative;
+}
+
+footer #block-block-3 {
+	float: right;
+	padding-right: 60px;
+	margin-bottom: 0;
+}
+
+footer #block-block-3 li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	padding: 0 8px 15px;
+}
+
+footer .block-menu {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+footer .block-menu h2 {
+	font-size: 0.8em;
+	padding: 20px 15px 10px;
+}
+footer .block-menu li {	
+	list-style: none;
+	line-height: 1.2em;
+}
+
+footer .block-menu ul {
+/* 	padding: 0; */
+/* 	margin: 0; */
+	margin: 0 ;
+	padding-left: 16px;
+}
+
+footer .block-menu li a {
+	color: #7A7F85;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+#footer #block-menu-menu-footer-copyright-menu {
+	float: right;
+	clear: right;
+	margin-right: 60px;
+	margin-top: 35px;
+	margin-bottom: 0;
+}
+
+#footer #block-menu-menu-footer-copyright-menu li {
+	float: left;
+	padding: 8px 10px;
+}
+
+#footer #copyright {
+	position: absolute;
+	top: 135px;
+	right: 76px;
+	color: #7A7F85;
+	font-size: 0.7em;
 }
