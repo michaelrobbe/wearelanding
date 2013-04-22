@@ -1,0 +1,17 @@
+name = ct_slide_image
+description = Content type and View Slideshow 
+core = 7.x
+package = Features
+php = 5.2.4
+dependencies[] = features
+dependencies[] = image
+dependencies[] = views
+dependencies[] = views_slideshow
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[field_base][] = field_slide
+features[field_instance][] = node-slide_image-field_slide
+features[node][] = slide_image
+features[views_view][] = slideshow
+features_exclude[field][node-slide_image-field_slide] = node-slide_image-field_slide
+features_exclude[dependencies][ctools] = ctools

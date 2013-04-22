@@ -1,0 +1,15 @@
+name = sub content
+description = Main Page Content Articles
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:1
+features[field_base][] = body
+features[field_base][] = field_icon
+features[field_instance][] = node-sub_section-body
+features[field_instance][] = node-sub_section-field_icon
+features[node][] = sub_section
+features_exclude[field][node-sub_section-body] = node-sub_section-body
+features_exclude[field][node-sub_section-field_icon] = node-sub_section-field_icon
