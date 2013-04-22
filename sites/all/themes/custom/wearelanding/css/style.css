@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+html body header#header{
+	background-color: #1C1F26;
+	font-family: helvetica;
+	background-image: url('/sites/all/themes/custom/wearelanding/images/gray_plaid_bg.png');
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+}
+
+#header #block-block-1 {
+	position: absolute;
+	width: 320px;
+	top: 145px;
+	left: 60px;
+}
+
+#header #block-block-2 {
+	position: absolute;
+	width: 320px;
+	top: 145px;
+	right: 60px;
+}
+
+#header #block-views-slideshow-block {
+	position: absolute;
+	top: 186px;
+	left: 458px;
+	width: 281px;
+	height: 400px;
+}
+
+#header #block-views-slideshow-block h2 {
+	margin-top: 2.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	line-height: 1em;
+}
+
+html body {
+	font-width: 100%;
+/* 	background-color: #1C1F26; */
+}
+
+html #logo {
+	display: none;
+}
+
+html #site-name {
+	float: left;
+}
+
+html #site-name a:link,
+html #site-name a:link span,
+html #site-name a:visited {
+	color: #fff;
+	font-size: 16px;
+	font-size: 1.2rem;
+}
+
+html #site-name a:hover {
+	text-decoration: none;
+}
+
+html #site-slogan {
+	display: inline-block;
+	color: #7B7C81;
+	font-style: italic;
+	font-weight: normal;
+	text-transform: lowercase;
+	font-size: 0.8em;
+	padding: 1.45em 1.2em 1em;
+}
+
+html #content {
+	background-color: white;
+}
+
+.region-header {
+	background-image: url('/sites/all/themes/custom/wearelanding/images/header.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 528px;
+}
+
+article {
+	width: 28%;
+	margin: 40px 1.5%;
+	display: inline-block;
+	position: relative;
+	padding-top: 180px;
+}
+
+.field-name-field-icon {
+	position: absolute;
+	top: 0px;
+	left: 90px;
+}

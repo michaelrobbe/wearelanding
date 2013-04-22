@@ -105,8 +105,6 @@
     </p>
   <?php endif; ?>
   
-  <pre>&&& <?php echo __FILE__; ?></pre>
-  
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>

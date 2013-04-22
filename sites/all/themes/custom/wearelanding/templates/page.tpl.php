@@ -70,7 +70,7 @@
  */
 ?>
 
-<pre>&&& <?php echo __FILE__; ?></pre>
+<div id="page-wrapper">
 <div id="page">
 
   <header id="header" role="banner">
@@ -93,6 +93,8 @@
       </hgroup><!-- /#name-and-slogan -->
     <?php endif; ?>
 
+    <?php print render($page['menu-top-header-menu']); ?>
+    
     <?php if ($secondary_menu): ?>
       <nav id="secondary-menu" role="navigation">
         <?php print theme('links__system_secondary_menu', array(
@@ -179,5 +181,6 @@
   <?php print render($page['footer']); ?>
 
 </div><!-- /#page -->
+</div><!-- /#page-wrapper -->
 
 <?php print render($page['bottom']); ?>
